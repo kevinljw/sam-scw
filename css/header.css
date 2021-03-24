@@ -141,10 +141,7 @@
 
 
 
-.myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
-  color: #ee252d;
-  border-bottom: 1px #ee252d solid
-}
+
 
 @media screen and (max-width:768px) {
   .myheader2 .mainnav li.on:before, .myheader .mainnav li.on:before {
@@ -155,16 +152,6 @@
 @media screen and (max-width:768px) {
   .myheader2 .mainnav li.on:after, .myheader .mainnav li.on:after {
     content: none
-  }
-}
-
-.myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
-  color: #ee252d
-}
-
-@media screen and (max-width:768px) {
-  .myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
-    color: #ca856b
   }
 }
 

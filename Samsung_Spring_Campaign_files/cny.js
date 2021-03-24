@@ -572,3 +572,9 @@ $(document).ready(function () {
         interval: 1000 * 100
     });
 });
+
+$(document).ready(function () {
+    $('#demo').carousel({
+        interval: 1000 * 100
+    });
+});
