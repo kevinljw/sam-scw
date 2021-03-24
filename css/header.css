@@ -1,0 +1,296 @@
+.myheader, .myheader2 {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.myheader2 .container, .myheader .container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .container, .myheader .container {
+    width: 100%;
+    /* background: white */
+  }
+}
+
+.myheader2 .logo, .myheader .logo {
+  float: left;
+  width: 200px;
+  line-height: 2.5;
+  position: relative;
+  font-weight: bold;
+  /* margin-left: 11.5% */
+}
+
+@media screen and (max-width:1200px) {
+  .myheader2 .logo, .myheader .logo {
+    width: 13.17716vw
+  }
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .logo, .myheader .logo {
+    width: 100%;
+    text-align: center;
+    /* line-height: 4 */
+  }
+}
+
+.myheader2 .logo .logonav, .myheader .logo .logonav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.myheader2 .mainnav, .myheader .mainnav {
+  padding-bottom: 5px;
+  background-color: #cfa1e0;
+  z-index: 99;
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav, .myheader .mainnav {
+    float: none;
+    padding-top: 10vw;
+    height: calc(100vh - 59px);
+    display: none;
+    position: relative;
+  }
+}
+
+.myheader2 .mainnav ul, .myheader .mainnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav ul, .myheader .mainnav ul {
+    display: block
+  }
+}
+
+.myheader2 .mainnav li, .myheader .mainnav li {
+  padding: 3px 3.5%;
+  padding-top: 10px;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 2px
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li, .myheader .mainnav li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 7.8125vw
+  }
+}
+
+.myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
+  background-image: url("../images/img-web/toogle-deco.png");
+  background-size: 30px 30px;
+  display: inline-block;
+  content: "";
+  left: 0;
+  top: 5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
+    content: none
+  }
+}
+
+.myheader2 .mainnav li.select:after, .myheader .mainnav li.select:after {
+  background-image: url("../images/img-web/toogle-deco.png");
+  background-size: 30px 30px;
+  right: 0;
+  top: 5%;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li.select:after, .myheader .mainnav li.select:after {
+    content: none
+  }
+}
+
+
+
+.myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
+  color: #ee252d;
+  border-bottom: 1px #ee252d solid
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li.on:before, .myheader .mainnav li.on:before {
+    content: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li.on:after, .myheader .mainnav li.on:after {
+    content: none
+  }
+}
+
+.myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
+  color: #ee252d
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .mainnav li.on span, .myheader .mainnav li.on span {
+    color: #ca856b
+  }
+}
+
+.myheader2 .mainnav li.open span:after, .myheader .mainnav li.open span:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: 5%;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease
+}
+
+.myheader2 .mainnav li>a, .myheader2 .mainnav li>span, .myheader .mainnav li>a, .myheader .mainnav li>span {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  display: inline;
+  font-weight: bold;
+  z-index: 1;
+  line-height: 1.5
+}
+
+.myheader2 .burger, .myheader .burger {
+  width: 5.59896vw;
+  position: absolute;
+  top: 3.5vw;
+  left: 4vw;
+  cursor: pointer;
+  z-index: 9999
+}
+
+@media screen and (max-width:768px) {
+  .myheader2 .burger._m, .myheader .burger._m {
+    display: block!important
+  }
+}
+
+.myheader2 .burger .line, .myheader .burger .line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50px
+}
+
+.myheader2 .burger .line:nth-child(2), .myheader .burger .line:nth-child(2) {
+  top: -5%;
+  left: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: top 0.35s, left 0.35s, width 0.35s, opacity 0.35s;
+  -o-transition: top 0.35s, left 0.35s, width 0.35s, opacity 0.35s;
+  transition: top 0.35s, left 0.35s, width 0.35s, opacity 0.35s
+}
+
+.myheader2 .burger .line:nth-child(3), .myheader2 .burger .line:nth-child(4), .myheader .burger .line:nth-child(3), .myheader .burger .line:nth-child(4) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -o-transition: transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s
+}
+
+.myheader2 .burger .line:nth-child(5), .myheader .burger .line:nth-child(5) {
+  bottom: -5%;
+  left: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: bottom 0.35s, left 0.35s, width 0.35s, opacity 0.35s;
+  -o-transition: bottom 0.35s, left 0.35s, width 0.35s, opacity 0.35s;
+  transition: bottom 0.35s, left 0.35s, width 0.35s, opacity 0.35s
+}
+
+/* .myheader2 .burger.isclick .line, .myheader .burger.isclick .line {
+  background: #b10000
+} */
+
+.myheader2 .burger.isclick .line:nth-child(2), .myheader2 .burger.isclick .line:nth-child(5), .myheader .burger.isclick .line:nth-child(2), .myheader .burger.isclick .line:nth-child(5) {
+  width: 0;
+  opacity: 0;
+  left: 50%
+}
+
+.myheader2 .burger.isclick .line:nth-child(2), .myheader .burger.isclick .line:nth-child(2) {
+  top: 50%
+}
+
+.myheader2 .burger.isclick .line:nth-child(5), .myheader .burger.isclick .line:nth-child(5) {
+  bottom: 50%
+}
+
+.myheader2 .burger.isclick .line:nth-child(3), .myheader .burger.isclick .line:nth-child(3) {
+  transform: rotateZ(-45deg)
+}
+
+.myheader2 .burger.isclick .line:nth-child(4), .myheader .burger.isclick .line:nth-child(4) {
+  transform: rotateZ(45deg)
+}
+
+.myheader2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #cfa1e0;
+  border-top: 1px solid #d5d5d5;
+  z-index: 100;
+  display: none
+}
+
+
+@media screen and (max-width:768px) {
+  .myheader2 .container {
+    width: 100%;
+    padding: 0
+  }
+  .myheader2 .mainnav li>a, .myheader2 .mainnav li>span, .myheader .mainnav li>a, .myheader .mainnav li>span {
+    font-size: 5.20833vw;
+  }
+}
