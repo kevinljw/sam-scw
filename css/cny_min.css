@@ -1033,7 +1033,7 @@ html {
   }
 } */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   ._m {
     display: block
   }
@@ -1235,7 +1235,7 @@ html {
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .sec8 .page .box_group {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
@@ -1276,7 +1276,7 @@ html {
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
   .sec9 .flexBlock .store .cont {
     min-height: auto;
     padding-top: 4vw;

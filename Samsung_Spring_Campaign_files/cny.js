@@ -9,7 +9,7 @@ var script = function() {
     var conH = $('.wrapper').height();
     var headerH = $('.myheader2').height();
 
-
+//    console.log("headerH2:"+headerH+"headerH1:"+$('.myheader').height());
 
     var $sec = $('.sec');
     var hash = location.hash,
@@ -23,7 +23,7 @@ var script = function() {
         $main = $('.wrapper'),
         // _mainTOP = $main.offset().top,
         ah = $main.outerHeight(true),
-        pageName = ['kv', 'main','z-series', 's21','n20', 'tab-s7', 'video', 'moresp', 'buy'];
+        pageName = ['kv', 'main', 'z-series', 's21','n20', 'tab-s7', 'video', 'moresp', 'buy'];
 
     var _thispagescroll = pageName.indexOf(hash);
 
@@ -41,7 +41,7 @@ var script = function() {
 
 
 
-    if (winW > 768) {
+    if (winW > 767) {
         var swiper2 = new Swiper('.gallery-txt', {
             effect: 'slide', //滑動方式
             grabCursor: false,
@@ -129,7 +129,7 @@ var script = function() {
 
 
 
-    if (winW > 768) {
+    if (winW > 767) {
 
         var i = 0;
 
@@ -237,7 +237,7 @@ var script = function() {
     var f = 0;
 
 
-    if (winW > 768) {
+    if (winW > 767) {
 
 
         function flower() {
@@ -274,7 +274,7 @@ var script = function() {
     }
 
 
-    if (winW > 768) {
+    if (winW > 767) {
 
        function red() {
 
@@ -406,6 +406,7 @@ var script = function() {
                 if (i == $sec.length - 1) { pageT.push(ah); }
             }
         );
+        
 
     }
 
@@ -415,8 +416,8 @@ var script = function() {
 
         pageReset();
         
-        if(thispage>=2 && thispage<6){
-            $('.navbtn[data-page="' + 1 + '"]').addClass('select');
+        if(thispage>=1 && thispage<6){
+            $('.navbtn[data-page="' + 2 + '"]').addClass('select');
         }
         else{
             $('.navbtn[data-page="' + thispage + '"]').addClass('select');
@@ -435,13 +436,23 @@ var script = function() {
         }, 600);
 
     }
-
+    menuselect();
+    
     var scrollPage = function(wt, whelf) {
         winH = $win.height();
         winW = $win.outerWidth();
         wt = $win.scrollTop();
-        whelf = winH / 3;
+        
+        
+        if (winW < 768){
+            whelf = winH / 6;
+        }
+        else{
+            whelf = winH / 3;
+        }
         // _mainTOP = $main.offset().top;
+        
+//        console.log("width:"+winW+"H:"+winH+" "+whelf);
 
         for (var p = 0; p < $sec.length; p++) {
             if (wt > pageT[p] - whelf && wt < pageT[p + 1] - whelf) {
@@ -459,6 +470,7 @@ var script = function() {
         var _pos;
         _thispagescroll = pageName.indexOf(hash.substr(1));
 
+        
         pageReset();
 
         var topH = $('.myheader2').height();
@@ -492,11 +504,13 @@ var script = function() {
     $navbtn.click(
         function() {
             var n = $(this).data('page');
-            if ((jQuery(window).width()) < 415){
-                if (n == 1){n-=1} else {n -= 2};
-            };
-            menuscroll(n);
+            
+//            if ((jQuery(window).width()) < 415){
+//                if (n == 1){n-=1} else {n -= 2};
+//            };
             navde();
+            menuscroll(n);
+            
 
         }
     );
