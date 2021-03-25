@@ -214,7 +214,7 @@ html {
 }
 
 #product-4 .figure, #product-5 .figure, #product-6 .figure {
-  left: 50px;
+  left: 20px;
   top: 30px;
 }
 
@@ -678,6 +678,7 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .sec9-tag {
@@ -899,6 +900,9 @@ html {
   .sec3-order3 {
     order: 2;
   }
+  .sec3-item1 img {
+    margin-left: 0%;
+  }
   .sec3 .page .maintitle .pic-box1 {
     display: flex;
     justify-content: space-around;
@@ -913,8 +917,7 @@ html {
     flex-direction: column;
   }
   .sec4-item1 img {
-    width: 55%;
-    padding-left: 5%;
+    width: 70%;
   }
   .sec4-item2 {
     width: 80%;
@@ -926,7 +929,8 @@ html {
     margin-top: -6%;
   }
   .sec5-item1 img {
-    width: 60%;
+    width: 88%;
+    margin-left: 2%;
   }
   .sec5-item2 {
     width: 80%;
@@ -993,7 +997,7 @@ html {
     margin: 0;
   }
   .sec6-item1 img {
-    width: 60%;
+    width: 90%;
     margin-left: -10%;
     margin-bottom: 5%;
   }
@@ -1016,10 +1020,9 @@ html {
   .sec9 .flexBlock .store .storeimg {
     margin-top: 60px;
   }
-  .sec9 .flexBlock .store .cont .btnbox{
+  .sec9 .flexBlock .store .cont .btnbox {
     bottom: 35px;
   }
-  
   .sec10 .title {
     font-size: 18px;
     width: 40%;
@@ -1028,7 +1031,7 @@ html {
 
 /* @media screen and (max-width:960) {
   .sec7 iframe {
-    width: 800;
+    width: 1000px;
     height: 600px;
   }
 } */
@@ -1111,8 +1114,8 @@ html {
     margin-top: 10px;
   }
   .sec3 .page .maintitle .btnbox {
-    width: 60%;
-    margin-left: 20%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 5%;
   }
   .sec3-item1 img {
@@ -1125,6 +1128,10 @@ html {
   .sec3 .page .phone .bg {
     width: 300%;
     left: -20%;
+  }
+  .sec3 .pic-box1 {
+    width: 100%;
+    margin-left: 0%;
   }
   .sec4 {
     margin-top: 10%;
@@ -1148,6 +1155,16 @@ html {
     text-align: center;
     font-size: 6px;
     font-weight: 900;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+  .sec5-item2 {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .sec5 .page .maintitle .bg .btnbox {
+    width: 80%;
+    margin-left: 10%;
   }
   .sec6 .page .phone .tphone {
     width: 140%;
@@ -1159,6 +1176,8 @@ html {
   }
   .sec6 .txt {
     margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 0px;
   }
   .sec7 .title, .sec8 .title, .sec9 .title {
     width: 50%;
@@ -1243,7 +1262,12 @@ html {
     position: relative;
     width: 40%;
     margin-top: 15%;
-    bottom: 35px
+    bottom: 35px;
+  }
+  .se9-line2 {
+    width: 75%;
+    border-bottom: 2px solid #7b4196;
+    opacity: 0.5;
   }
   .sec9 .flexBlock .store .cont p {
     padding: 0 3.5%

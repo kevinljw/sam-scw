@@ -92,6 +92,12 @@
   letter-spacing: 2px
 }
 
+@media screen and (max-width:1200px) {
+  .myheader2 .mainnav li, .myheader .mainnav li {
+    padding: 3px 4.5%;
+  }
+}
+
 @media screen and (max-width:768px) {
   .myheader2 .mainnav li, .myheader .mainnav li {
     width: 100%;
@@ -138,10 +144,6 @@
     content: none
   }
 }
-
-
-
-
 
 @media screen and (max-width:768px) {
   .myheader2 .mainnav li.on:before, .myheader .mainnav li.on:before {
@@ -270,7 +272,6 @@
   z-index: 100;
   display: none
 }
-
 
 @media screen and (max-width:768px) {
   .myheader2 .container {
