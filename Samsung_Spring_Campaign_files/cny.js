@@ -345,7 +345,7 @@ var script = function() {
         if (navopen == 0) {
 
             $('.myheader').css({
-                'height': '45vh',
+                'height': '55vh',
                 'overflow': ''
             });
 

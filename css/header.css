@@ -72,7 +72,7 @@
   .myheader2 .mainnav, .myheader .mainnav {
     float: none;
     padding-top: 10vw;
-    height: 45vh;
+    height: 55vh;
     display: none;
     position: relative;
   }
