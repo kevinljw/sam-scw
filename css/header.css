@@ -11,6 +11,13 @@
   width: 80%
 }
 
+@media screen and (max-width:1200px) {
+  .myheader2 .container, .myheader .container {
+    width: 95%;
+    /* background: white */
+  }
+}
+
 @media screen and (max-width:768px) {
   .myheader2 .container, .myheader .container {
     width: 100%;
@@ -85,24 +92,18 @@
 }
 
 .myheader2 .mainnav li, .myheader .mainnav li {
-  padding: 3px 3.5%;
+  padding: 3px 4%;
   padding-top: 10px;
   position: relative;
   cursor: pointer;
   letter-spacing: 2px
 }
 
-@media screen and (max-width:1200px) {
-  .myheader2 .mainnav li, .myheader .mainnav li {
-    padding: 3px 4.5%;
-  }
-}
-
 @media screen and (max-width:768px) {
   .myheader2 .mainnav li, .myheader .mainnav li {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 7.8125vw
+    margin-bottom: 2vw
   }
 }
 
