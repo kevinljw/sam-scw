@@ -11,17 +11,23 @@
   width: 80%
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1200px) { 
   .myheader2 .container, .myheader .container {
     width: 95%;
     /* background: white */
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .container, .myheader .container {
     width: 100%;
     /* background: white */
+  }
+}
+
+@media screen and (max-width:767px) {
+  .first-microsite {
+    margin-top: 20px;
   }
 }
 
@@ -31,7 +37,6 @@
   line-height: 2.5;
   position: relative;
   font-weight: bold;
-  /* margin-left: 11.5% */
 }
 
 @media screen and (max-width:1200px) {
@@ -40,7 +45,7 @@
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .logo, .myheader .logo {
     width: 100%;
     text-align: center;
@@ -63,11 +68,11 @@
   z-index: 99;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav, .myheader .mainnav {
     float: none;
     padding-top: 10vw;
-    height: calc(100vh - 59px);
+    height: 45vh;
     display: none;
     position: relative;
   }
@@ -85,7 +90,7 @@
   justify-content: center
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav ul, .myheader .mainnav ul {
     display: block
   }
@@ -99,7 +104,7 @@
   letter-spacing: 2px
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav li, .myheader .mainnav li {
     width: 100%;
     margin-right: 0;
@@ -121,7 +126,7 @@
   background-position: left;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
     content: none
   }
@@ -140,19 +145,19 @@
   background-position: right;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav li.select:after, .myheader .mainnav li.select:after {
     content: none
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav li.on:before, .myheader .mainnav li.on:before {
     content: none;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .mainnav li.on:after, .myheader .mainnav li.on:after {
     content: none
   }
@@ -179,15 +184,15 @@
 }
 
 .myheader2 .burger, .myheader .burger {
-  width: 5.59896vw;
+  width: 22px;
   position: absolute;
-  top: 3.5vw;
-  left: 4vw;
+  top: 12px;
+  left: 12px;
   cursor: pointer;
   z-index: 9999
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .burger._m, .myheader .burger._m {
     display: block!important
   }
@@ -274,7 +279,7 @@
   display: none
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .myheader2 .container {
     width: 100%;
     padding: 0
