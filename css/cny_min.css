@@ -221,37 +221,9 @@ html {
   width: 107%;
 }
 
-#product-4 .figure {
+#product-4 .figure, #product-5 .figure, #product-6 .figure {
   left: 20px;
-  top: 30px;
-}
-
-#product-5 img {
-  width: 110%;
-  margin-left: 10%;
-}
-
-#product-5 .figure {
-  left: 40px;
-  top: 30px;
-}
-
-#product-6 img {
-  width: 85%;
-  margin-left: 15%;
-}
-
-#product-5 .bt1, #product-6 .bt1 {
-  width: 33%;
-}
-
-#product-6 .bt1 {
-  width: 40%;
-}
-
-#product-6 .figure {
-  left: 40px;
-  top: 30px;
+  top: 40px;
 }
 
 .sec3 {
@@ -279,7 +251,7 @@ html {
 }
 
 .sec3-item1 img {
-  width: 85%;
+  width: 45%;
 }
 
 .sec3-item2 {
@@ -913,13 +885,17 @@ html {
     padding: 20px;
   }
   #product-1 img {
-    width: 108%;
+    width: 100%;
+  }
+  #product-1 .figure {
+    top: 15px;
   }
   #product-2 img {
-    width: 104%;
+    width: 90%;
+    margin-left: 10%;
   }
   #product-2 .figure {
-    left: 190px;
+    top: 10px;
   }
   #product-3 img {
     width: 98%;
@@ -937,6 +913,7 @@ html {
   }
   #product-4 .figure {
     left: 50px;
+    top: 35px;
   }
   #product-5 {
     padding-top: 0px;
@@ -950,6 +927,7 @@ html {
   }
   #product-5 .figure {
     left: 60px;
+    top: 30px;
   }
   #product-6 {
     padding-left: 25px;
@@ -963,6 +941,7 @@ html {
   }
   #product-6 .figure {
     left: 68px;
+    top: 25px;
   }
   .sec3 .page .phone .bg {
     top: 0%;
@@ -992,6 +971,7 @@ html {
     order: 2;
   }
   .sec3-item1 img {
+    width: 85%;
     margin-left: 0%;
   }
   .sec3 .page .maintitle .pic-box1 {
@@ -1139,7 +1119,7 @@ html {
     top: 28%;
   }
   .sec {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
   }
   .sec .btnbox .bt1 {
     width: 100px;
@@ -1206,7 +1186,7 @@ html {
   #product-4 .figure {
     width: 180%;
     left: -90px;
-    top: 30px;
+    top: 35px;
   }
   #product-5 .figure {
     top: 35px;
@@ -1221,6 +1201,7 @@ html {
   }
   #product-6 .figure {
     left: 120px;
+    top: 35px;
   }
   #product-6 .bt1 {
     width: 20%;
