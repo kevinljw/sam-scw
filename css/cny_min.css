@@ -209,6 +209,7 @@ html {
 }
 
 #product-2 img {
+  margin-top: 7px;
   width: 94%;
 }
 
@@ -752,7 +753,7 @@ html {
 }
 
 .sec9 .flexBlock .store .cont li {
-  font-size: 12px;
+  font-size: 14px;
   list-style: decimal outside
 }
 
@@ -1099,6 +1100,9 @@ html {
   }
   .sec9 .flexBlock .store .cont .btnbox {
     bottom: 35px;
+  }
+  .sec9 .flexBlock .store .cont li {
+    font-size: 12px;
   }
   .sec10 .title {
     font-size: 18px;
