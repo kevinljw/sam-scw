@@ -69,10 +69,10 @@ html {
 }
 
 .fixgoBtn {
-  width: 4vw;
+  width: 5vw;
   position: fixed;
   right: 3%;
-  top: 24%;
+  top: 27%;
   z-index: 9;
   cursor: pointer;
 }
@@ -208,13 +208,45 @@ html {
   position: absolute;
 }
 
+#product-2 img {
+  width: 94%;
+}
+
 #product-1 .figure, #product-2 .figure, #product-3 .figure {
   left: 200px;
   top: 20px;
 }
 
-#product-4 .figure, #product-5 .figure, #product-6 .figure {
+#product-4 img {
+  width: 107%;
+}
+
+#product-4 .figure {
   left: 20px;
+  top: 30px;
+}
+
+#product-5 img {
+  width: 110%;
+  margin-left: 10%;
+}
+
+#product-5 .figure {
+  left: 40px;
+  top: 30px;
+}
+
+#product-6 img {
+  width: 85%;
+  margin-left: 15%;
+}
+
+#product-6 .bt1 {
+  width: 45%;
+}
+
+#product-6 .figure {
+  left: 40px;
   top: 30px;
 }
 
@@ -232,6 +264,10 @@ html {
   margin-left: 10%;
 }
 
+.sec3 .pic-box1 img {
+  margin-top: 4%;
+}
+
 .sec3-item1 {
   width: 100%;
   margin-left: 5%;
@@ -239,7 +275,7 @@ html {
 }
 
 .sec3-item1 img {
-  width: 50%;
+  width: 85%;
 }
 
 .sec3-item2 {
@@ -266,7 +302,7 @@ html {
 
 .sec3 .page .phone .bg {
   position: absolute;
-  top: -43%;
+  top: -42%;
   left: -22%;
   width: 200%;
 }
@@ -406,9 +442,9 @@ html {
 
 .sec5 .page .phone .bg {
   position: absolute;
-  top: -43%;
-  left: -55%;
-  width: 220%;
+  top: -50%;
+  left: -150%;
+  width: 300%;
 }
 
 .sec5 .page .phone .tphone {
@@ -462,6 +498,7 @@ html {
   top: -150%;
   left: -55%;
   width: 150%;
+  display: none;
 }
 
 .sec6 .page .phone .tphone {
@@ -848,13 +885,17 @@ html {
 }
 
 @media screen and (max-width:1200px) {
+  .sec {
+    margin-bottom: 5%;
+  }
   .sec .btnbox .bt1 {
     width: 30%;
   }
   .fixgoBtn {
     right: 4vw;
-    width: 6vw;
+    width: 7vw;
     bottom: 60%;
+    top: 34%;
   }
   .sec1 .promotion img {
     position: absolute;
@@ -867,8 +908,57 @@ html {
     margin: 0px;
     padding: 20px;
   }
-  .sec {
-    margin-bottom: 5%;
+  #product-1 img {
+    width: 108%;
+  }
+  #product-2 img {
+    width: 104%;
+  }
+  #product-2 .figure {
+    left: 190px;
+  }
+  #product-3 img {
+    width: 98%;
+  }
+  #product-3 .figure {
+    left: 190px;
+  }
+  #product-4 {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  #product-4 img {
+    width: 106%;
+    margin-left: 0%;
+  }
+  #product-4 .figure {
+    left: 50px;
+  }
+  #product-5 {
+    padding-top: 0px;
+  }
+  #product-5 img {
+    width: 108%;
+    margin-left: 0%;
+  }
+  #product-5 .bt1 {
+    width: 26%;
+  }
+  #product-5 .figure {
+    left: 60px;
+  }
+  #product-6 {
+    padding-left: 25px;
+  }
+  #product-6 img {
+    width: 97%;
+    margin-left: 0%;
+  }
+  #product-6 .bt1 {
+    width: 29%;
+  }
+  #product-6 .figure {
+    left: 68px;
   }
   .sec3 .page .phone .bg {
     top: 0%;
@@ -914,7 +1004,7 @@ html {
     flex-direction: column;
   }
   .sec4-item1 img {
-    width: 70%;
+    width: 85%;
   }
   .sec4-item2 {
     width: 80%;
@@ -964,7 +1054,7 @@ html {
     flex-direction: column;
   }
   .sec6-item1 {
-    width: 80%;
+    width: 85%;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -984,6 +1074,7 @@ html {
     left: -50%;
     top: -100%;
     width: 200%;
+    display: block;
   }
   .sec6-item3 {
     width: 70%;
@@ -1026,14 +1117,7 @@ html {
   }
 }
 
-/* @media screen and (max-width:960) {
-  .sec7 iframe {
-    width: 1000px;
-    height: 600px;
-  }
-} */
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   ._m {
     display: block
   }
@@ -1042,8 +1126,11 @@ html {
   }
   .fixgoBtn {
     right: 8px;
-    width: 7vw;
-    bottom: 60%;
+    width: 10vw;
+    top: 28%;
+  }
+  .sec {
+    margin-bottom: 20%;
   }
   .sec .btnbox .bt1 {
     width: 80px;
@@ -1084,7 +1171,7 @@ html {
     display: flex;
     flex-direction: column;
   }
-  #product-2, #product-4, #product-6 {
+  #product-2 {
     margin-left: 30%;
   }
   #product-4 {
@@ -1092,19 +1179,52 @@ html {
     width: 85%;
     margin-bottom: 15px;
   }
-  #product-1 .figure, #product-3 .figure, #product-5 .figure {
+  #product-1 .figure, #product-3 .figure {
     left: 50px;
     top: 30px;
   }
-  #product-2 .figure, #product-6 .figure {
-    left: -50px;
-    top: 30px;
+  #product-2 img {
+    width: 94%;
+  }
+  #product-2 .figure {
+    top: 35px;
+    left: -45px;
+  }
+  #product-4 img {
+    width: 105%;
+    margin-left: -10%;
   }
   #product-4 .figure {
-    left: -50px;
+    left: -90px;
     top: 30px;
   }
-  .sec3{
+  #product-5 img {
+    width: 115%;
+  }
+  #product-5 .bt1 {
+    width: 70px;
+    height: 30px;
+  }
+  #product-5 .figure {
+    top: 30px;
+    left: 75px;
+  }
+  #product-6 {
+    /* padding-top: 0px;
+    padding-left: 25px; */
+  }
+  #product-6 img {
+    width: 115%;
+    margin-left: 30%;
+  }
+  #product-6 .bt1 {
+    width: 20%;
+  }
+  #product-6 .figure {
+    top: 35px;
+    margin-left: 80%;
+  }
+  .sec3 {
     margin-top: 18%;
   }
   .sec3 .page .maintitle .pic-box1 {
@@ -1121,11 +1241,12 @@ html {
     margin-top: 5%;
   }
   .sec3-item1 img {
-    width: 70%;
+    width: 85%;
   }
   .sec3 .page .phone .tphone {
-    width: 120%;
-    margin-left: 40%;
+    width: 180%;
+    margin-left: 10%;
+    margin-bottom: 20%;
   }
   .sec3 .page .phone .bg {
     width: 300%;
@@ -1149,7 +1270,7 @@ html {
     margin-bottom: 0%;
   }
   .sec .txt a {
-    font-size: 8px;
+    font-size: 11px;
     font-weight: 900;
   }
   .sec5 .page .maintitle .bg .txt {
@@ -1168,9 +1289,13 @@ html {
     width: 80%;
     margin-left: 10%;
   }
+  .sec5 .page .phone .tphone {
+    width: 130%;
+    margin-left: -10%;
+  }
   .sec6 .page .phone .tphone {
-    width: 140%;
-    margin-left: -15%;
+    width: 175%;
+    margin-left: -25%;
   }
   .sec6-item3 {
     width: 100%;
@@ -1181,6 +1306,7 @@ html {
     margin-top: 0;
     padding-top: 0px;
   }
+  
   .sec7 .title, .sec8 .title, .sec9 .title {
     width: 50%;
     font-size: 16px;
@@ -1190,8 +1316,8 @@ html {
     font-size: 15px;
   }
   .sec7 iframe {
-    width: 280px;
-    height: 150px;
+    width: 350px;
+    height: 170px;
   }
   .sec8 .box {
     width: 46.5%;
@@ -1218,12 +1344,14 @@ html {
     margin-top: 20px;
   }
   .sec10 .title {
-    width: 70%;
-    font-size: 10px;
+    width: 75%;
+    font-size: 16px;
     padding: 5px;
+    padding-top: 8px;
     top: -12px;
     margin-top: 15px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   .sec10 .content p {
     font-size: 12px;
@@ -1235,7 +1363,7 @@ html {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .sec8 .page .box_group {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
@@ -1276,7 +1404,7 @@ html {
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .sec9 .flexBlock .store .cont {
     min-height: auto;
     padding-top: 4vw;
@@ -1303,5 +1431,12 @@ html {
   .sec9 .flexBlock .store .cont small {
     font-size: 3vw;
     padding-left: 7vw
+  }
+}
+
+@media screen and (max-width:415px) {
+  .sec7 iframe {
+    width: 280px;
+    height: 150px;
   }
 }

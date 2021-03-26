@@ -11,7 +11,7 @@
   width: 80%
 }
 
-@media screen and (max-width:1200px) { 
+@media screen and (max-width:1200px) {
   .myheader2 .container, .myheader .container {
     width: 95%;
     /* background: white */
@@ -108,12 +108,13 @@
   .myheader2 .mainnav li, .myheader .mainnav li {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 2vw
+    margin-bottom: 2vw;
+    /* left: 50px; */
   }
 }
 
 .myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
-  background-image: url("../images/img-web/toogle-deco.png");
+  background-image: url("../images/img-web/toogle-deco.gif");
   background-size: 30px 30px;
   display: inline-block;
   content: "";
@@ -127,13 +128,16 @@
 }
 
 @media screen and (max-width:767px) {
+  .myheader2 .mainnav li.select a {
+    /* position: absolute; */
+  }
   .myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
     content: none
   }
 }
 
 .myheader2 .mainnav li.select:after, .myheader .mainnav li.select:after {
-  background-image: url("../images/img-web/toogle-deco.png");
+  background-image: url("../images/img-web/toogle-deco.gif");
   background-size: 30px 30px;
   right: 0;
   top: 5%;
