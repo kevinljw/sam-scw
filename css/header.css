@@ -72,7 +72,7 @@
   .myheader2 .mainnav, .myheader .mainnav {
     float: none;
     padding-top: 10vw;
-    height: 55vh;
+    height: 45vh;
     display: none;
     position: relative;
   }
@@ -128,9 +128,6 @@
 }
 
 @media screen and (max-width:767px) {
-  .myheader2 .mainnav li.select a {
-    /* position: absolute; */
-  }
   .myheader2 .mainnav li.select:before, .myheader .mainnav li.select:before {
     content: none
   }
@@ -152,6 +149,20 @@
 @media screen and (max-width:767px) {
   .myheader2 .mainnav li.select:after, .myheader .mainnav li.select:after {
     content: none
+  }
+}
+
+@media screen and (max-width:767px) {
+  .myheader .mainnav li.select .deco, .myheader2 .mainnav li.select .deco {
+    background-image: url("../images/img-web/toogle-deco.gif");
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    /* border: 2px solid green; */
+    display: inline-block;
+  }
+  .myheader2 .mainnav li.select>span, .myheader .mainnav li.select>span{
+    top: -9px;
   }
 }
 
@@ -289,6 +300,7 @@
     padding: 0
   }
   .myheader2 .mainnav li>a, .myheader2 .mainnav li>span, .myheader .mainnav li>a, .myheader .mainnav li>span {
-    font-size: 5.20833vw;
+    font-size: 1rem;
+    font-weight: 1000;
   }
 }

@@ -168,7 +168,8 @@ html {
 .sec2 {
   position: relative;
   margin-top: 7%;
-  margin-bottom: 1%
+  margin-bottom: 1%;
+  z-index: 1;
 }
 
 .sec2 .flex-container {
@@ -208,23 +209,58 @@ html {
   position: absolute;
 }
 
-#product-2 img {
-  margin-top: 7px;
-  width: 94%;
+#product-1 {
+  flex: 34.5%;
 }
 
-#product-1 .figure, #product-2 .figure, #product-3 .figure {
+#product-1 .figure {
   left: 200px;
   top: 20px;
 }
 
-#product-4 img {
-  width: 107%;
+#product-2 {
+  flex: 31.2%;
 }
 
-#product-4 .figure, #product-5 .figure, #product-6 .figure {
-  left: 20px;
+#product-2 .figure {
+  left: 180px;
+  top: 20px;
+}
+
+#product-3 {
+  flex: 34.3%;
+}
+
+#product-3 .figure {
+  left: 200px;
+  top: 20px;
+}
+
+#product-4 {
+  flex: 36%;
+}
+
+#product-4 .figure {
+  left: 30px;
   top: 40px;
+}
+
+#product-5 {
+  flex: 35.4%;
+}
+
+#product-5 .figure {
+  left: 0px;
+  top: 40px;
+}
+
+#product-6 {
+  flex: 28.6%;
+}
+
+#product-6 .figure {
+  left: 45px;
+  top: 35px;
 }
 
 .sec3 {
@@ -507,7 +543,7 @@ html {
 
 .sec7 {
   position: relative;
-  padding-bottom: 8%
+  margin-bottom: 8%
 }
 
 .sec7 .container {
@@ -534,16 +570,6 @@ html {
   justify-content: center;
 }
 
-.sec7 .arrow-right {
-  position: absolute;
-  right: -50%;
-}
-
-.sec7 .arrow-left {
-  position: absolute;
-  left: -50%;
-}
-
 .sec7 .arrow-right img, .arrow-left img {
   width: 80%;
   margin-left: 10%;
@@ -560,6 +586,35 @@ html {
 .sec7 iframe {
   width: 860px;
   height: 400px;
+}
+
+.sec7 .arrow-right {
+  position: absolute;
+  right: -50%;
+  top: 165px;
+}
+
+.sec7 .arrow-left {
+  position: absolute;
+  left: -50%;
+  top: 165px;
+}
+
+.sec7 .carousel-caption {
+  bottom: -70px;
+}
+
+.sec7 .carousel-inner {
+  padding-bottom: 70px;
+}
+
+.sec7 .carousel-inner h3 {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.sec7 .carousel-indicators {
+  bottom: 90px;
 }
 
 .sec8 {
@@ -885,67 +940,41 @@ html {
     margin: 0px;
     padding: 20px;
   }
-  #product-1 img {
-    width: 100%;
+  #product-1 {
+    flex: 51.5%;
   }
-  #product-1 .figure {
-    top: 15px;
+  #product-2 {
+    flex: 48.5%;
   }
-  #product-2 img {
-    width: 90%;
-    margin-left: 10%;
-  }
-  #product-2 .figure {
-    top: 10px;
-  }
-  #product-2 img{
-    margin-top: -4px;
-  }
-  #product-3 img {
-    width: 98%;
+  #product-3 {
+    padding-top: 40px;
+    flex: 46%;
   }
   #product-3 .figure {
-    left: 190px;
+    left: 185px;
   }
   #product-4 {
-    padding-top: 0px;
-    padding-left: 0px;
-  }
-  #product-4 img {
-    width: 106%;
-    margin-left: 0%;
+    padding-top: 10px;
+    flex: 54%;
   }
   #product-4 .figure {
-    left: 50px;
-    top: 35px;
+    top: 40px;
+    left: 45px;
   }
   #product-5 {
-    padding-top: 0px;
-  }
-  #product-5 img {
-    width: 108%;
-    margin-left: 0%;
-  }
-  #product-5 .bt1 {
-    width: 26%;
+    flex: 55%;
   }
   #product-5 .figure {
-    left: 60px;
     top: 30px;
+    left: 40px;
   }
   #product-6 {
-    padding-left: 25px;
-  }
-  #product-6 img {
-    width: 97%;
-    margin-left: 0%;
-  }
-  #product-6 .bt1 {
-    width: 29%;
+    padding-top: 38px;
+    flex: 45%;
   }
   #product-6 .figure {
-    left: 68px;
-    top: 25px;
+    top: 30px;
+    left: 70px;
   }
   .sec3 .page .phone .bg {
     top: 0%;
@@ -1088,12 +1117,30 @@ html {
   .sec7 .title, .sec8 .title, .sec9 .title {
     font-size: 20px;
   }
+  .sec7 .carousel-caption {
+    bottom: -60px;
+  }
+  .sec7 .carousel-inner {
+    padding-bottom: 60px;
+  }
+  .sec7 .carousel-inner h3 {
+    font-size: 1rem;
+  }
+  .sec7 .carousel-indicators {
+    bottom: 80px;
+  }
   .sec9 .title {
     top: -20px;
   }
   .sec7 iframe {
     width: 540px;
     height: 270px;
+  }
+  .sec7 .arrow-right {
+    top: 120px;
+  }
+  .sec7 .arrow-left {
+    top: 120px;
   }
   .se9-line {
     border: 1px solid #7b4196;
@@ -1167,51 +1214,57 @@ html {
     display: flex;
     flex-direction: column;
   }
+  #product-1 {
+    flex: 70%;
+  }
+  #product-1 .figure {
+    left: 50px;
+    top: 35px;
+  }
   #product-2 {
+    flex: 70%;
     margin-left: 30%;
   }
-  #product-4 {
-    margin-left: 25%;
-    width: 85%;
-    margin-bottom: 15px;
-  }
-  #product-1 .figure, #product-3 .figure {
-    left: 50px;
-    top: 30px;
-  }
-  #product-2 img {
-    width: 94%;
-  }
   #product-2 .figure {
-    top: 35px;
     left: -45px;
+    top: 35px;
+  }
+  #product-3 {
+    padding-top: 0px;
+    flex: 70%;
+  }
+  #product-3 .figure {
+    left: 50px;
+    top: 35px;
+  }
+  #product-4 {
+    flex: 82%;
+    margin-left: 18%;
+    margin-bottom: 30px;
   }
   #product-4 img {
-    width: 105%;
-    margin-left: -10%;
+    width: 130%;
   }
   #product-4 .figure {
-    width: 180%;
-    left: -90px;
+    width: 75%;
+    left: -45px;
     top: 35px;
+  }
+  #product-5 {
+    flex: 70%;
   }
   #product-5 .figure {
+    left: 50px;
     top: 35px;
-    left: 200px;
   }
-  #product-5 .bt1 {
-    width: 20%;
-  }
-  #product-6 img {
-    width: 115%;
-    margin-left: 25%;
+  #product-6 {
+    flex: 70%;
+    margin-left: 30%;
+    padding-top: 25px;
   }
   #product-6 .figure {
-    left: 120px;
+    left: -50px;
     top: 35px;
-  }
-  #product-6 .bt1 {
-    width: 20%;
   }
   .sec3 {
     margin-top: 18%;
@@ -1310,6 +1363,24 @@ html {
   .sec7 iframe {
     width: 350px;
     height: 170px;
+  }
+  .sec7 .arrow-right {
+    top: 75px;
+  }
+  .sec7 .arrow-left {
+    top: 75px;
+  }
+  .sec7 .carousel-caption {
+    bottom: -45px;
+  }
+  .sec7 .carousel-inner {
+    padding-bottom: 45px;
+  }
+  .sec7 .carousel-inner h3 {
+    font-size: 0.5rem;
+  }
+  .sec7 .carousel-indicators {
+    bottom: 65px;
   }
   .sec8 .box {
     width: 46.5%;
@@ -1430,6 +1501,12 @@ html {
   .sec7 iframe {
     width: 280px;
     height: 150px;
+  }
+  .sec7 .arrow-right {
+    top: 65px;
+  }
+  .sec7 .arrow-left {
+    top: 65px;
   }
   .sec .btnbox .bt1 {
     width: 80px;

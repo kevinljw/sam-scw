@@ -1,32 +1,17 @@
-var script = function() {
+var script = function () {
 
     var $body = $('html,body');
     var winH = $(window).height();
     var winW = $(window).outerWidth();
     // var docH  = $(document).height();
     var $win = $(window);
-    var scrollBottom = $(window).scrollTop() + $(window).height();
-    var conH = $('.wrapper').height();
     var headerH = $('.myheader2').height();
 
-//    console.log("headerH2:"+headerH+"headerH1:"+$('.myheader').height());
+    console.log("headerH2:"+headerH+"headerH1:"+$('.myheader').height());
 
     var $sec = $('.sec');
     var hash = location.hash,
-        href;
-
-    /* page scroll */
-    var thispage = 0;
-    var pagescroll = true;
-    var pageT = [],
-        $sec = $('.sec'),
-        $main = $('.wrapper'),
-        // _mainTOP = $main.offset().top,
-        ah = $main.outerHeight(true),
-        pageName = ['kv', 'main', 'z-series', 's21','n20', 'tab-s7', 'video', 'moresp', 'buy'];
-
-    var _thispagescroll = pageName.indexOf(hash);
-
+href;
 
     AOS.init({
         offset: 150,
@@ -36,141 +21,16 @@ var script = function() {
         anchorPlacement: 'top-bottom',
     });
 
+    /* page scroll */
+    var thispage = 0;
+    var pageT = [],
+        $sec = $('.sec'),
+        $main = $('.wrapper'),
+        // _mainTOP = $main.offset().top,
+        ah = $main.outerHeight(true),
+        pageName = ['kv', 'main', 'z-series', 's21', 'n20', 'tab-s7', 'video', 'moresp', 'buy'];
 
-    /* slick ---------------------------------------------------*/
-
-
-
-    if (winW > 767) {
-        var swiper2 = new Swiper('.gallery-txt', {
-            effect: 'slide', //滑動方式
-            grabCursor: false,
-            centeredSlides: true, //置中
-            initialSlide: 2, //起始幻燈片
-            spaceBetween: 50,
-            // slidesPerView: '2',
-            slidesPerView: 'auto',
-            // init: false,
-            loopedSlides: '5',
-            touchRatio: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.btn_next',
-                prevEl: '.btn_prev',
-            },
-        });
-
-
-        var swiper = new Swiper('.gallery-top', {
-            effect: 'slide', //滑動方式
-            grabCursor: false,
-            centeredSlides: true, //置中
-            initialSlide: 2, //起始幻燈片
-            spaceBetween: -500,
-            // slidesPerView: '2',
-            slidesPerView: 'auto',
-            // init: false,
-            loopedSlides: '5',
-            touchRatio: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.btn_next',
-                prevEl: '.btn_prev',
-            },
-        });
-
-    } else {
-        // 手機版
-        var swiper2 = new Swiper('.gallery-txt', {
-            effect: 'slide', //滑動方式
-            grabCursor: false,
-            centeredSlides: true, //置中
-            initialSlide: 2, //起始幻燈片
-            spaceBetween: 100,
-            slidesPerView: 'auto',
-            loopedSlides: '5',
-            touchRatio: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.btn_next',
-                prevEl: '.btn_prev',
-            },
-        });
-
-
-        var swiper = new Swiper('.gallery-top', {
-            effect: 'slide', //滑動方式
-            grabCursor: false,
-            centeredSlides: true, //置中
-            initialSlide: 2, //起始幻燈片
-            slidesPerView: 'auto',
-            loopedSlides: '5',
-            touchRatio: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.btn_next',
-                prevEl: '.btn_prev',
-            },
-            // thumbs: {
-            //     swiper: swiper2,
-            // },
-        });
-    }
-
-
-    //  $('.sec1 .allkv').slick({
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     dots: true,
-    //     autoplay:true,
-    //     arrows: false
-    // });
-
-
-
-    if (winW > 767) {
-
-        var i = 0;
-
-        function swipergo() {
-            var _scroll = $win.scrollTop();
-            var _sec7pos = $('.sec7').offset().top;
-
-            if (i == 0) {
-                if (_scroll <= _sec7pos - 500) {
-
-                    $('.gallery-top  .swiper-slide-next').next().css('transform', 'translate( -30% ,0)');
-                    $('.gallery-top  .swiper-slide-prev').prev().css('transform', 'translate( 30% ,0)');
-
-                    $('.gallery-top .swiper-slide-prev').css('transform', 'translate( 15% ,0)');
-                    $('.gallery-top .swiper-slide-next').css('transform', 'translate( -15% ,0)');
-
-                    // TweenMax.to('.gallery-top .swiper-slide', 1, { autoAlpha: 0, ease: Linear.easeNone });
-                    TweenMax.to('.gallery-top .swiper-slide-duplicate', 1, { autoAlpha: 0, ease: Linear.easeNone });
-                    TweenMax.to('.gallery-top .swiper-slide-active', 1, { autoAlpha: 1, ease: Linear.easeNone });
-
-
-                } else if (_scroll = _sec7pos) {
-
-                    $('.gallery-top .swiper-slide-prev').css('transform', 'translate( 0 ,0)');
-                    $('.gallery-top .swiper-slide-next').css('transform', 'translate( 0 ,0)');
-
-                    $('.gallery-top  .swiper-slide-next').next().css('transform', 'translate( 0 ,0)');
-                    $('.gallery-top  .swiper-slide-prev').prev().css('transform', 'translate( 0 ,0)');
-
-                    // TweenMax.to('.gallery-top .swiper-slide', .5, { autoAlpha: 1, ease: Linear.easeNone });
-                    TweenMax.to('.gallery-top .swiper-slide-duplicate', 1, { autoAlpha: 1, delay: 2, ease: Linear.easeNone });
-                    i++;
-                    console.log(i);
-                }
-            } else {}
-        }
-        $win.scroll(swipergo);
-    } else {
-
-    }
-
+    var _thispagescroll = pageName.indexOf(hash);
 
     var go = 0;
 
@@ -178,15 +38,13 @@ var script = function() {
         var _scroll = $win.scrollTop();
         var _sec8pos = $('.sec8').offset().top;
 
-        if (go == 0) {
-            if (_scroll >= _sec8pos - 500) {
-                $('.sec8 .title').addClass('go');
-                $('.sec8 .title').css("display", "block");
-
-                go++;
-            }
-
-        } else {}
+        // if (go == 0) {
+        //     if (_scroll >= _sec8pos - 500) {
+        //         $('.sec8 .title').addClass('go');
+        //         $('.sec8 .title').css("display", "block");
+        //         go++;
+        //     }
+        // }
     }
 
     $win.scroll(swipergo2);
@@ -194,24 +52,24 @@ var script = function() {
 
 
 
-    $('.btn_next').click(function() {
+    $('.btn_next').click(function () {
 
-        $('.mainIframe').each(function() {
+        $('.mainIframe').each(function () {
             this.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', '*');
         });
 
     });
 
 
-    $('.btn_prev').click(function() {
-        $('.mainIframe').each(function() {
+    $('.btn_prev').click(function () {
+        $('.mainIframe').each(function () {
             this.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', '*');
         });
 
     });
 
 
-    $('.btnback').click(function() {
+    $('.btnback').click(function () {
         $('html,body').animate({ scrollTop: 0 }, 333);
     });
 
@@ -219,12 +77,10 @@ var script = function() {
     /* header fix ---------------------------------------------------*/
 
     var _sec2pos = $('.sec2').offset().top;
-    var _sec5pos = $('.sec5').offset().top;
-    var _sec7pos = $('.sec7').offset().top;
 
     function headerfix() {
         var _scroll = $win.scrollTop();
-
+        // console.log(_scroll, _sec2pos)
         if (_scroll >= _sec2pos / 3) {
             $('.myheader2').fadeIn('fast');
         } else {
@@ -233,80 +89,6 @@ var script = function() {
     }
 
     $win.scroll(headerfix);
-
-    var f = 0;
-
-
-    if (winW > 767) {
-
-
-        function flower() {
-
-            var _scroll = $win.scrollTop();
-
-            if (_scroll >= _sec5pos - 200) {
-                $('.flower').addClass('go');
-
-            } else if (_scroll <= _sec5pos - 500) {
-                $('.flower').removeClass('go');
-            }
-
-        }
-
-        $win.scroll(flower);
-
-    } else {
-
-        function flower() {
-
-            var _scroll = $win.scrollTop();
-
-            if (_scroll >= _sec5pos - 250) {
-                $('.flower').addClass('go');
-
-            } else if (_scroll <= _sec5pos - 500) {
-                $('.flower').removeClass('go');
-            }
-        }
-
-        $win.scroll(flower);
-
-    }
-
-
-    if (winW > 767) {
-
-       function red() {
-
-            var _scroll = $win.scrollTop();
-
-            if (_scroll > _sec2pos) {
-
-                if (_scroll < _sec7pos) {
-
-                    if ($('.mainnav li').hasClass('select')) {
-
-                        $('.navbtn.red').removeClass('on');
-
-                    } else {
-                        $('.navbtn.red').addClass('on');
-                    }
-
-                } else {
-                    
-                    $('.navbtn.red').removeClass('on');
-                }
-
-            } else {
-                $('.navbtn.red').removeClass('on');
-            }
-        }
-
-    } else {
-
-    }
-
-    $win.scroll(red);
 
 
     // 重設
@@ -324,13 +106,6 @@ var script = function() {
 
         TweenMax.to('.myheader', .1, { backgroundColor: '#cfa1e0', ease: Quart.easeOut });
 
-        $('body').css({
-            'overflow-y': '',
-            'position': '',
-            'height': ''
-        });
-
-
         if (winW <= 768) {
             $('.mainnav').hide();
         } else {
@@ -343,21 +118,9 @@ var script = function() {
     function navfunc() {
         var navopen = $('.burger').attr('toggle');
         if (navopen == 0) {
-
-            $('.myheader').css({
-                'height': '55vh',
-                'overflow': ''
-            });
-
             TweenMax.to('.myheader', .1, { backgroundColor: '#cfa1e0', ease: Quart.easeOut });
 
             $('.mainnav').slideDown();
-
-            $('body').css({
-                'overflow-y': 'hidden',
-                'position': 'fixed',
-                'height': '100%'
-            });
 
             $('.burger').attr('toggle', '1');
             $('.burger').addClass('isclick');
@@ -368,12 +131,6 @@ var script = function() {
             $('.myheader').css('height', '11vw');
             TweenMax.to('.myheader', .5, { backgroundColor: '#cfa1e0', delay: 0, ease: Quart.easeOut });
             $('.mainnav').slideUp();
-
-            $('body').css({
-                'overflow-y': '',
-                'position': '',
-                'height': ''
-            });
 
             $('.burger').attr('toggle', '0');
             $('.burger').removeClass('isclick');
@@ -386,7 +143,6 @@ var script = function() {
 
     /* page scroll */
     var thispage = 0;
-    var pagescroll = true;
     var pageT = [],
         $sec = $('.sec'),
         $main = $('.wrapper'),
@@ -395,39 +151,35 @@ var script = function() {
 
     var $navbtn = $('.navbtn');
 
-    var pageReset = function() {
+    var pageReset = function () {
         pageT = [];
         winW = $win.outerWidth();
         ah = $main.outerHeight(true);
         $sec.each(
-            function(i, obj) {
+            function (i, obj) {
                 var t = $(obj).offset().top;
                 pageT.push(t);
                 if (i == $sec.length - 1) { pageT.push(ah); }
             }
         );
-        
-
     }
 
-    var menuselect = function() {
+    var menuselect = function () {
         $navbtn.removeClass('select');
-
-
         pageReset();
-        
-        if(thispage>=1 && thispage<6){
+
+        if (thispage >= 1 && thispage < 6) {
             $('.navbtn[data-page="' + 2 + '"]').addClass('select');
         }
-        else{
+        else {
             $('.navbtn[data-page="' + thispage + '"]').addClass('select');
         }
-        
-
-
+        // $(document).ready(function () {
+        //     console.log($("li.select span").html())
+        // });
     }
 
-    var menuscroll = function(n) {
+    var menuscroll = function (n) {
         var _pos;
         thispage = n;
         pageReset();
@@ -437,22 +189,22 @@ var script = function() {
 
     }
     menuselect();
-    
-    var scrollPage = function(wt, whelf) {
+
+    var scrollPage = function (wt, whelf) {
         winH = $win.height();
         winW = $win.outerWidth();
         wt = $win.scrollTop();
-        
-        
-        if (winW < 768){
+
+
+        if (winW < 768) {
             whelf = winH / 6;
         }
-        else{
+        else {
             whelf = winH / 3;
         }
         // _mainTOP = $main.offset().top;
-        
-//        console.log("width:"+winW+"H:"+winH+" "+whelf);
+
+        //        console.log("width:"+winW+"H:"+winH+" "+whelf);
 
         for (var p = 0; p < $sec.length; p++) {
             if (wt > pageT[p] - whelf && wt < pageT[p + 1] - whelf) {
@@ -466,11 +218,10 @@ var script = function() {
         window.location.hash = href;
     }
 
-    var scrollthispage = function() {
-        var _pos;
+    var scrollthispage = function () {
         _thispagescroll = pageName.indexOf(hash.substr(1));
 
-        
+
         pageReset();
 
         var topH = $('.myheader2').height();
@@ -497,36 +248,23 @@ var script = function() {
         };
 
     }
-    setTimeout(function() {
+    setTimeout(function () {
         scrollthispage()
     }, 600);
 
     $navbtn.click(
-        function() {
+        function () {
             var n = $(this).data('page');
-            
-//            if ((jQuery(window).width()) < 415){
-//                if (n == 1){n-=1} else {n -= 2};
-//            };
             navde();
             menuscroll(n);
-            
-
         }
     );
-
-    // $('body').click(function(e) {
-    //     var _con = $('.lbbox'); // 设置目标区域
-    //     if (!_con.is(e.target) && _con.has(e.target).length === 0) { // Mark 1
-    //         lbClose();
-    //     }
-    // });
 
 
     /* resize
     ------------------------------------------------------------*/
 
-    var _resize = function() {
+    var _resize = function () {
 
         winW = $win.outerWidth();
         winH = $win.height();
@@ -540,7 +278,7 @@ var script = function() {
     }
     $win.scroll(scrollPage);
     _resize();
-    $win.resize(function() {
+    $win.resize(function () {
 
         // _resize();
 
@@ -553,7 +291,7 @@ var script = function() {
     var windowHeight = $(window).height();
 
     // Resize Event
-    $(window).resize(function() {
+    $(window).resize(function () {
 
         // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
         if ($(window).width() != windowHeight) {
@@ -568,15 +306,14 @@ var script = function() {
         }
 
     });
-
 }
 
 
-$(function() {
+$(function () {
 
     script();
 
-    $('.gb-footer-2019__btn-top').click(function() {
+    $('.gb-footer-2019__btn-top').click(function () {
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
             scrollTop: 0
@@ -589,12 +326,12 @@ $(function() {
 
 $(document).ready(function () {
     $('#carouselControls').carousel({
-        interval: 1000 * 100
+        interval: 1000 * 1000
     });
 });
 
 $(document).ready(function () {
     $('#demo').carousel({
-        interval: 1000 * 100
+        interval: 1000 * 1000
     });
 });
