@@ -108,7 +108,7 @@
   .myheader2 .mainnav li, .myheader .mainnav li {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     /* left: 50px; */
   }
 }
