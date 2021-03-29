@@ -795,13 +795,14 @@ html {
 .sec9 .flexBlock .store .cont p {
   margin: auto;
   padding: 0 10%;
-  font-size: 14px;
+  font-size: 15px;
   text-align: justify;
   font-weight: 800;
 }
 
 .sec9 .flexBlock .store .cont .stitle {
-  font-weight: bold
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .sec9 .flexBlock .store .cont ul {
