@@ -7,7 +7,7 @@ var script = function () {
     var $win = $(window);
     var headerH = $('.myheader2').height();
 
-    console.log("headerH2:"+headerH+"headerH1:"+$('.myheader').height());
+    // console.log("headerH2:"+headerH+"headerH1:"+$('.myheader').height());
 
     var $sec = $('.sec');
     var hash = location.hash,
