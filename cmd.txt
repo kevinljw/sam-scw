@@ -1,0 +1,1 @@
+html-inline index.html -o _index.html --ignore-images
