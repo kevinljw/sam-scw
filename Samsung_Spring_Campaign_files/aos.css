@@ -994,9 +994,9 @@
 }
 
 [data-aos=pic_left] {
-  -webkit-transform: translate(40px, 40%);
-  -ms-transform: translate(40px, 40%);
-  transform: translate(40px, 40%);
+  -webkit-transform: translate(-40px, 0%);
+  -ms-transform: translate(-40px, 0%);
+  transform: translate(-40px, 0%);
   opacity: 0
 }
 

@@ -665,6 +665,7 @@ html {
 .sec7 .flex-center {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .sec7 .arrow-right img, .arrow-left img {
@@ -681,8 +682,8 @@ html {
 }
 
 .sec7 iframe {
-  width: 900px;
-  height: 400px;
+  width: 60vw;
+  height: 28vw;
 }
 
 .sec7 .arrow-right img{
@@ -696,6 +697,10 @@ html {
   left: -50%;
   top: 150px;
 }
+.carousel-caption{
+  right: 0%;
+  left: 0%;
+}
 
 .sec7 .carousel-caption {
   bottom: -70px;
@@ -703,6 +708,7 @@ html {
 
 .sec7 .carousel-inner {
   padding-bottom: 70px;
+  background-color: #e3d3e7;
 }
 
 .sec7 .carousel-inner h3 {
@@ -713,6 +719,8 @@ html {
 .sec7 .carousel-indicators {
   bottom: 90px;
 }
+
+
 
 .sec8 {
   position: relative
@@ -1320,7 +1328,7 @@ html {
     font-size: 20px;
   }
   .sec7 .carousel-caption {
-    bottom: -65px;
+    bottom: -60px;
   }
   .sec7 .carousel-inner {
     padding-bottom: 60px;
@@ -1357,13 +1365,12 @@ html {
     top: -20px;
   }
   .sec7 iframe {
-    width: 540px;
-    height: 270px;
+    width: 64vw;
   }
-  .sec7 .arrow-right {
+  .sec7 .arrow-right img{
     top: 120px;
   }
-  .sec7 .arrow-left {
+  .sec7 .arrow-left img{
     top: 120px;
   }
   .se9-line {
@@ -1419,6 +1426,15 @@ html {
   }
   .sec3 .pic-box1 .pic-right{
     width: 48%;
+  }
+  .sec7 .arrow-right img{
+    top: 80px;
+  }
+  .sec7 .arrow-left img{
+    top: 80px;
+  }
+  .sec9 .flexBlock .store .cont .btnbox {
+    bottom: -25px;
   }
 }
 
@@ -1655,6 +1671,7 @@ html {
   }
   .sec6 .sec6-item1 {
     width: 85%;
+    margin-left: 29%;
   }
   .sec6 .sec6-item2{
     margin-top: 12%;
@@ -1711,18 +1728,17 @@ html {
   .sec7 .container .swiper-container.gallery-txt .swiper-wrapper .swiper-slide-active {
     font-size: 15px;
   }
-  .sec7 iframe {
-    width: 350px;
-    height: 170px;
-  }
-  .sec7 .arrow-right {
+  .sec7 .arrow-right img{
     top: 75px;
   }
-  .sec7 .arrow-left {
+  .sec7 .arrow-left img{
     top: 75px;
   }
   .sec7 .carousel-inner {
-    padding-bottom: 45px;
+    padding-bottom: 30px;
+  }
+  .sec7 .carousel-caption{
+   bottom: -50px; 
   }
   .sec7 .carousel-inner h3 {
     font-size: 0.5rem;
@@ -1836,21 +1852,26 @@ html {
     font-size: 11px;
     font-weight: 900;
   }
-  .sec7 iframe {
-    width: 280px;
-    height: 150px;
+  .sec7{
+    margin-bottom: 8%;
   }
-  .sec7 .arrow-right {
-    top: 65px;
+  .sec7 .carousel-indicators{
+    bottom: 40px;
   }
-  .sec7 .arrow-left {
-    top: 65px;
+  .carousel-indicators li{
+    max-width: 20px;
+  }
+  .sec7 .arrow-right img{
+    top: 50px;
+  }
+  .sec7 .arrow-left img{
+    top: 50px;
   }
   .sec .btnbox .bt1 {
     width: 85px;
   }
   .sec7 .carousel-caption {
-    bottom: -55px;
+    bottom: -40px;
   }
   .sec5 .page .maintitle .bg .txt {
     margin-top: 0px;
