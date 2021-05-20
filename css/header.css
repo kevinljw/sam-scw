@@ -9,7 +9,7 @@
 .myheader2 .container, .myheader .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 80%
+  width: 100%
 }
 
 @media screen and (max-width:767px) {
